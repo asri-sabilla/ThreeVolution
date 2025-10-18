@@ -1,0 +1,75 @@
+.program-section {
+  background: #f7faff;
+  padding: 80px 20px;
+}
+
+.program-header h2 {
+  color: #f8d32d;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.program-header p {
+  color: #555;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.program-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.program-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.program-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.program-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #f8d32d;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.program-card h3 {
+  color: #f8d32d;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.program-card .subtitle {
+  font-weight: 600;
+  color: #000;
+}
+
+.program-card .desc {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.program-card button {
+  background: #f8d32d;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
