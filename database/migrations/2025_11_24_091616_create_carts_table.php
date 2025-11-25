@@ -1,0 +1,32 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCartsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('carts', function (Blueprint $table) {
+            $table->id();
+            $table->char('idSayur',5)->unique();
+            $table->string ('NamaSayur');
+            $table->string ('Harga');
+            $table->string ('Asal');
+            $table->integer ('Jumlah');
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('carts');
+    }
+};

@@ -8,9 +8,12 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="/program">Progran</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/program">Program</a></li>
                 <li class="nav-item"><a class="nav-link active" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/cart">Cart</a></li>
                 <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/register">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link active" href="/login">Log in</a></li>
             </ul>
         </div>
     </div>
