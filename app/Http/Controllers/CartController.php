@@ -35,7 +35,6 @@ class CartController extends Controller
         echo($result[0]->Jumlah);
     }
 
-    // 🔥 Ini yang dipakai untuk halaman /cart
     public function index()
     {
         $cart = DB::table('carts')->get();

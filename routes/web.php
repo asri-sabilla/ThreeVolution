@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\CollectionController;
 use App\Http\Controllers\CartController;
@@ -10,6 +11,8 @@ use App\Http\Controllers\AdminController;
 Route::get('/', function () {
     return view('welcome');
 });
+Auth::routes();
+Route::get('/home',[App\Http\Controllers\HomeController::class,'index'])->name('home');
 
 Route::get('/home', function () {
     return view('home');
@@ -58,3 +61,6 @@ Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/users/{id}/edit', [UserController::class, 'edit'])->name('users.edit');
 Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');
 Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
